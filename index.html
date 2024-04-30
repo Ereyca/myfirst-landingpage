@@ -6,74 +6,82 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <div class="navbar">
-                <div class="logotext">
+        <nav class="navbar">
+            <div class="container"> <!-- Container for navbar content layout-->
+                <div class="logo-text">
                     Header Logo
                 </div>
-                <nav class="navmenu">
-                    <ul class="menuoptions">
-                        <li class="option1">
-                            <a href="#">header link one</a>
-                        </li>
-                        <li class="option2">
-                            <a href="#">header link two</a>
-                        </li>
-                        <li class="option3">
-                            <a href="#">header link three</a>
-                        </li>
-                    </ul>
-                </nav>
+                <ul class="nav-options">
+                    <li class="nav-option1">
+                        <a href="#">header link one</a>
+                    </li>
+                    <li class="nav-option2">
+                        <a href="#">header link two</a>
+                    </li>
+                    <li class="nav-option3">
+                        <a href="#">header link three</a>
+                    </li>
+                </ul>
             </div>
-            <div class="hero-container">
+        </nav>
+        <header class="header-banner"> <!-- with class in case other header elswhere-->
+            <div class="container">
                 <div class="hero-text">
                     <h1>This website is awesome</h1>
                     <p>
                         This website has some subtext that goes here under the main tityle.
                          It´s a smaller font and the color is lower contrast
                     </p>
-                    <a class="signup-button">Sign up</a>
+                    <a class="signup-button" href="#">Sign up</a>
                 </div>
-                <img class="heroimage" src="images/placeholder.png" alt="this is a placeholder for an image">
+                <div class="hero-image-space">
+                    <img class="hero-image" src="images/placeholder.png" alt="this is a placeholder for an image">
+                </div>
             </div>
         </header>
-        <main>
-            <section class="infosection">
+        <main class="container">
+            <section class="info-section">
                 <h2>
-                    Some random inrofmation.
+                    Some random information.
                 </h2>
-                <figure class="info-one-img">
-                    <img src="images/info-one.png" alt="ilustration for info-one">
-                    <figcaption class="info-one-caption">this is some subtext under an illustration or image</figcaption>
-                </figure>
-                <figure class="info-two-img">
-                    <img src="images/info-two.png" alt="ilustration for info-two">
-                    <figcaption class="info-two-caption">this is some subtext under an illustration or image</figcaption>
-                </figure>
-                <figure class="info-three-img">
-                    <img src="images/info-three.png" alt="ilustration for info-three">
-                    <figcaption class="info-three-caption">this is some subtext under an illustration or image</figcaption>
-                </figure>
+                <article class="art-one">
+                    <div class="info-box">
+                        <div class="ilustration-box"></div>
+                        <p class="caption-text">this is some subtext under an illustration or image</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="ilustration-box"></div>
+                        <p class="caption-text">this is some subtext under an illustration or image</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="ilustration-box"></div>
+                        <p class="caption-text">this is some subtext under an illustration or image</p>
+                    </div>
+                </article>    
             </section>
             <section class="quotes">
-                <blockquote>
+                <p class="quote">
                     This is an inspiring quote, or a testimonial from a customer. Maybe it´s just filling up space,
-                    or maybe people will actually read it. Who knows? All I know is that it looksnice.
-                </blockquote>
-                <cite>
-                    -Thor, God of Thunbder
-                </cite>
+                    or maybe people will actually read it. Who knows? All I know is that it looks nice.
+                </p>
+                <p class="quote-cite">
+                    -Thor, God of Thunder
+                </p>
             </section>
             <section class="action">
-                <h3>Call to action! It´s time!</h3>
-                <p>
-                    Sign up for our product by clicking that button right over there!
-                </p>
-                <a class="singup-button">Sign up</a>
+                <div class="action-box">
+                    <h3>Call to action! It´s time!</h3>
+                    <p>
+                        Sign up for our product by clicking that button right over there!
+                    </p>
+                    <a class="singup-button">Sign up</a>
+                </div>
             </section>
         </main>
         <footer>
-            <small class="copyright">Copyright @ The Odin Project 2021</small>
+            <div class="container">
+                <small class="copyright">Copyright @ The Odin Project 2021</small>
+            </div>
         </footer>
     </body>
 </html>
