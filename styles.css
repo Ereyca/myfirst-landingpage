@@ -12,19 +12,22 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 1em;
 
 }
 
 .navbar {
     background-color: #1F2937;
     color: #F9FAF8;
-    height: 50px;
 }
 
-.nav-options {
-    list-style-type: none;
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3rem;
 }
 
 .logo-text {
@@ -32,18 +35,33 @@ body {
     color: #F9FAF8;
 }
 
+.nav-options {
+    list-style-type: none;
+    display: flex;
+}
+
 .nav-options a {
     text-decoration: none;
     color: #E5E7EB;
 }
 
-.header-banner {
-    background-color:#1F2937;
+header {
+    background-color: #1F2937;
+    min-height: 100px;
 }
 
-.container .hero-text {
-    height: 300px;
+header .container {
+    display: flex;
+    align-items: center;
+    min-height: 400px;
+    gap: 2rem; 
 }
+
+/*.container .hero-text {
+    height: 300px;
+} 
+
+no need for this - was ipedding vertical aligment*/
 
 .hero-text h1 {
     font-size: 48px;
@@ -60,13 +78,21 @@ body {
     font-size: 18px;
     color:#E5E7EB;
     text-decoration: none;
+    background-color:#3883f6;
+    border-radius: 10px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 10px 40px;
+    margin-top: 10px;
 }
 
 .hero-image-space {
     border-color: #fff;
     background-color: grey;
-    height: 300px;
-    max-width: 50%;
+    color: #E5E7EB;
+    min-width: 50%;
+    height: 200px;
 }
 
 .info-section {
