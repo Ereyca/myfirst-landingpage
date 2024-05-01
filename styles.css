@@ -14,7 +14,7 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 0 1em;
 
 }
 
@@ -93,19 +93,35 @@ no need for this - was ipedding vertical aligment*/
     color: #E5E7EB;
     min-width: 50%;
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info-section {
     background-color: #fff;
-    height: 300px;
 }
+
+.info-section .container {
+    display: flex;
+    min-height: 400px;
+    flex-direction: column;
+    align-items: center;
+    }
 
 .info-section h2 {
     font-size: 36px;
+    margin: 36px 0;
+}
+
+.art-one {
+    display: flex;
+    gap: 50px;
 }
 
 .info-box {
-    width: 150px;
+    width: 125px;
+    height: auto;
 }
 
 .ilustration-box {
@@ -113,8 +129,15 @@ no need for this - was ipedding vertical aligment*/
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
+}
+
+.info-box p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: smaller;
+    font-weight:lighter;
 }
 
 .quotes {
