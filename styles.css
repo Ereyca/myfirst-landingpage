@@ -120,7 +120,7 @@ no need for this - was ipedding vertical aligment*/
 }
 
 .info-box {
-    width: 125px;
+    width: 150px;
     height: auto;
 }
 
@@ -129,20 +129,27 @@ no need for this - was ipedding vertical aligment*/
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
 }
 
 .info-box p {
     text-align: center;
     margin-top: 10px;
-    font-size: smaller;
     font-weight:lighter;
 }
 
 .quotes {
     background-color:#E5E7EB;
-    height: 300px;
+    height: 400px;
+}
+
+.quotes .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 810px;
+    min-height: 400px;
 }
 
 .quotes .quote {
